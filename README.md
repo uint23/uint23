@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="banner.png" alt="Header" />
+  <img src="" alt="Header" />
 </p>
