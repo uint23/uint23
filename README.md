@@ -1,1 +1,1 @@
-_**available for hire - need job**_
+_**available for hire**_
