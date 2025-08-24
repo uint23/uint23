@@ -1,5 +1,3 @@
-console.log(`welc0me mast0r haxx0r 😈😈😈`)
-
 const feeds = {
 	hn: { type:"hn" },
 	lobsters: { type:"rss", url:"https://lobste.rs/rss" }
@@ -34,7 +32,7 @@ async function load_feed(platform, count)
 	if (!list) {
 		return console.error("#articles-list missing");
 	}
-	list.innerHTML = "<li><em>Loading…</em></li>";
+	list.innerHTML = "<h5>loading…</h5>";
 
 	try {
 		if (feeds[platform]?.type === "hn") {
@@ -70,16 +68,14 @@ async function load_feed(platform, count)
 }
 
 /* feed */
-$("articles-refresh").addEventListener("click", ()=>{
-	const platform = $("platform")?.value || "hn";
-	const n = Math.max(1, Math.min(500, parseInt($("articles")?.value,10) || 10));
-	load_feed(platform, n);
-});
+	$("articles-refresh").addEventListener("click", ()=>{
+		const platform = $("platform")?.value || "hn";
+		const n = Math.max(1, Math.min(500, parseInt($("articles")?.value,10) || 10));
+		load_feed(platform, n);
+	});
 
 var platform = document.getElementById("platform").value;
 var n = Math.max(1, Math.min(500, parseInt($("articles")?.value)));
-
-load_feed(platform, n);
 
 const sel=$("platform"), num=$("articles");
 sel.value = localStorage.getItem("platform");
@@ -87,17 +83,4 @@ num.value = localStorage.getItem("articles");
 $("articles-refresh").addEventListener("click", ()=>{
 	localStorage.setItem("platform", sel.value);
 	localStorage.setItem("articles", num.value);
-});
-
-/* fonts */
-const fonts = ["sans-serif", "Georgia, serif", "Courier New"];
-const btn = document.getElementById("font-selector");
-
-let current = parseInt(localStorage.getItem("fontIndex") || "0", 10);
-document.body.style.fontFamily = fonts[current];
-
-btn.addEventListener("click", () => {
-  current = (current + 1) % fonts.length;
-  document.body.style.fontFamily = fonts[current];
-  localStorage.setItem("fontIndex", current);
 });
