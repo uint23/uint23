@@ -1,47 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>uint23</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="container">
-<h1>uint23</h1>
-<p><strong>Software Engineer</strong></p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>mallocd news</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+		<!-- SEO JUNK!! -->
+		<meta name="description" content="curated low level articles and live feeds.">
+		<link rel="canonical" href="https://mallocd.com/">
+		<meta property="og:title" content="mallocd.com">
+		<meta property="og:description" content="curated low level articles and news">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://mallocd.com/">
+		<meta name="theme-color" content="#667EAD">
 
-<hr>
+	</head>
+	<body>
+		<header>
+			<h1 class="mallocdnews">
+				<a class="laiz-a" href="index.html"><img class="laizheader" src="laiz.png"></a>
+				<span>
+					mallocd news <br>
+					<a class="tagline">
+						curated - low level <br>
+						*articles &news
+					</a>
+				</span>
+				<div class="righticons">
+					<img class="leak_png" src="leak.png" alt="">
+				</div>
+			</h1>
+			<nav>
+				<a class="navitem" href="index.html">news</a> :
+				<a class="navitem" href="projects.html">projects</a> :
+				<a class="navitem" href="guides.html">guides</a> :
+				<a class="navitem" href="about.html">about</a>
+				<button class="nav-font-selector" id="font-selector">font</button>
+			</nav>
+			<hr>
+		</header>
 
-<h2>About</h2>
-<p><strong>Name:</strong> uint (Abhinav Prasai)<br>
-<strong>Age:</strong> 16<br>
-<strong>Type:</strong> Software Developer<br>
-<strong>OS:</strong> Linux & OSX<br>
-<strong>Lang:</strong> C, C++, Python<br>
-<strong>Spec:</strong> Minimalist, fast software development</p>
+		<main>
+			<h3>My Articles</h3>
+			<ul>
+				<!--<li><a href="/posts/wm.html">Building a WM in C</a> — 1 Aug 2025</li>-->
+				<li><a href="/articles/nothing.html">nothing yet</a> &mdash; <time datetime="2025-08-08">08 Aug 2025</time></li>
+			</ul>
+		</main>
 
-<h2>Skills</h2>
-<p><strong>Languages:</strong> C, C++, Python<br>
-<strong>Systems:</strong> Linux, Windows, MacOS<br>
-<strong>Tools:</strong> Git, GCC, Clang, Make</p>
+		<h3>Live From:</h3>
+		<select id="platform" name="platform">
+			<option value="hn">Hacker News</option>
+			<option value="lobsters">Lobsters</option>
+		</select>
+		<input id="articles" type="number" min="1" max="500" value="10">
+		<button id="articles-refresh">Refresh</button>
 
-<h2>Projects</h2>
-<ul>
-<li><a href="sxwm.html">sxwm</a> - X11 tiling window manager</li>
-<li><a href="https://github.com/uint23/sxbar">sxbar</a> - X11 status-bar program</li>
-</ul>
+		<ol id="articles-list"></ol>
 
-<h2>Written Work</h2>
-<ul>
-<li><a href="written/a_comprehensive_guide_wm/a_comprehensive_guide_wm.html">A Comprehensive Guide on Making a Window Manager</a></li>
-</ul>
+		<footer>
+			<hr>
+			<p>&copy; <span id="year">2025</span> Abhinav Prasai - <a href="mailto:abhinav.prsai@gmail.com">abhinav.prsai@gmail.com</a></p>
+		</footer>
 
-<h2>Contact</h2>
-<p><strong>email:</strong> <a href="mailto:abhinav.prsai@gmail.com">abhinav.prsai@gmail.com</a><br>
-<strong>website:</strong> <a href="index.html">https://uint23.xyz</a><br>
-<strong>git:</strong> <a href="https://github.com/uint23">https://github.com/uint23</a></p>
-
-<hr>
-<p>Abhinav Prasai (C) 2025</p>
-</div>
-</body>
+		<script src="script.js" defer></script>
+	</body>
 </html>
