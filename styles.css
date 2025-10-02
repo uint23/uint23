@@ -125,3 +125,8 @@ footer {
 	width: auto;
 	flex: 0 0 auto;
 }
+
+.nav-font-selector {
+	font-style: italic;
+	font-family: serif
+}

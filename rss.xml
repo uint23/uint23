@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>mallocd news</title>
+    <link>https://mallocd.com/</link>
+    <description>curated low level articles and live feeds.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Oct 2025 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>nothing yet</title>
+      <link>https://mallocd.com/articles/nothing.html</link>
+      <description>Placeholder article</description>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mallocd.com/articles/nothing.html</guid>
+    </item>
+  </channel>
+</rss>
