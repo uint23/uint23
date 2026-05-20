@@ -1,0 +1,9 @@
+set -o vi
+
+export EDITOR='vim'
+
+PS1=">> "
+
+alias ffchrome="vim ~/.mozilla/firefox/jz2bnawr.default-release/chrome/userChrome.css"
+alias lg="lazygit"
+
